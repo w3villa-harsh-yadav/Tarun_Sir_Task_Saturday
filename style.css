@@ -1,0 +1,296 @@
+/*
++++++++++++++++++++++++++++
+Variables
++++++++++++++++++++++++++++
+*/
+:root {
+    --radius: 30px;
+    --main-bg-color: #002a7a;
+    --main-bg-shadow: #193f87;
+    --primary-text: #fff;
+    --grey: grey;
+}
+
+
+
+/* Common classes */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: none;
+    background-color: #f5f6fa;
+}
+.pd{
+    padding: 10px;
+}
+.mg{
+    margin:10px
+}
+
+
+/* Nav Bar Section Left Side Section */
+.container{
+    margin-top: 10px;
+    max-width: 96vw;
+}
+.container .left-bar .nav-bar{
+    justify-content: space-between;
+    height: 95vh;
+    background-color: var(--main-bg-shadow);
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.left-bar .nav-bar::-webkit-scrollbar {
+    width: 0px;
+}
+.container .left-bar .nav-bar .main-icon{
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    background-color: var(--main-bg-color);
+    border-radius: 45%;
+}
+.container .left-bar .nav-bar .nav-items{
+    text-align: center;
+    row-gap: 35px;
+}
+.container .left-bar .nav-bar .nav-items i{
+    font-size: 25px;
+    color: white;
+}
+.container .left-bar .nav-bar .nav-img .image{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+.container .left-bar .nav-bar .nav-img .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Main Section   */
+
+
+
+
+
+/*  Right Bar */
+.right-bar{
+    height: 96vh;
+    border-radius: 20px;
+    width: 20vw;
+    background-color: var(--primary-text);
+    overflow-y:scroll;
+}
+.right-bar::-webkit-scrollbar {
+    width: 3px;
+}
+.right-bar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+.right-bar::-webkit-scrollbar-thumb {
+  background-color: rgb(183, 183, 183);
+  outline: 1px solid white;
+}
+.right-bar .right-bar-content{
+    padding: 20px;
+}
+.right-bar .right-bar-content .right-bar-heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+.right-bar .right-bar-content .right-bar-heading .lighter-heading{
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+/* My-card-classes */
+
+.right-bar .right-bar-content .my-card{
+    padding-top: 20px;
+}
+.right-bar .right-bar-content .my-card .my-card-heading{
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+}
+.right-bar .right-bar-content .my-card .my-card-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.right-bar .right-bar-content .my-card .my-card-content .card-image{
+    height: 105px;
+}
+.right-bar .right-bar-content .my-card .my-card-content .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-bar .right-bar-content .my-card .my-card-content .card-price .card-body{
+    margin: 16px 15px;
+}
+.right-bar .right-bar-content .my-card .my-card-content .card-price .card-title{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.right-bar .right-bar-content .my-card .my-card-content .card-price .card-text{
+    font-weight: 200;
+    opacity: 0.5;
+}
+
+/* Recent Transactions */
+.right-bar
+.right-bar-content
+.recent-transactions{
+    padding-top: 20px;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-heading{
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.7;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content::-webkit-scrollbar {
+    width: 3px;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content::-webkit-scrollbar-thumb {
+  background-color: rgb(183, 183, 183);
+  outline: 1px solid white;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 10px 0px;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card
+.card-content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card
+.card-content
+.title{
+    font-size: 24px;
+    color: #0c88e1;
+    background-color: #a7e9ff;
+    border-radius: 50%;
+    padding: 9px 18px;
+}
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card
+.card-content
+.text{
+    font-weight: bolder;
+}
+
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card
+.card-content
+.light-text{
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.trans-card
+.card-price{
+    padding-top: 10px;
+    padding-right: 5px;
+    color: rgb(8, 212, 8);
+    font-weight: 700;
+}
+
+.right-bar
+.right-bar-content
+.recent-transactions
+.recent-transactions-content
+.red-card
+.card-price{
+    padding-top: 10px;
+    color: rgb(255, 46, 4);
+    font-weight: 700;
+}
+
+.right-bar
+.right-bar-content
+.find-us{
+    padding: 20px 0px;
+}
+
+.right-bar
+.right-bar-content
+.find-us
+.maps{
+    padding: 10px 0px;
+    width: 100%;
+    height: 30vh;
+}
+
+.right-bar
+.right-bar-content
+.find-us
+.maps div{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
